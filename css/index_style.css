@@ -1,0 +1,96 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+body, html{
+    overflow-x: hidden
+}
+img{
+    object-fit:cover
+}
+h1{
+    color: #22a7f0
+}
+.home{
+    height: 100vh
+}
+nav{
+    z-index: 999;
+}
+.navbar-light a{
+    color: #fff!important;
+}
+.bg-light{
+    background-color: transparent!important
+}
+.navbar-brand {
+    font-family: 'Charm', cursive;
+    color: #d5858d;
+    font-size: 40px;
+    z-index: 999
+}
+.one{
+     background-image: url(../images/post-1.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%
+}
+.two{
+    background-image: url(../images/post-2.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%
+}
+.three{
+    background-image: url(../images/post-3.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%
+}
+.cont{
+    margin: 0 auto;
+    position: relative;
+    top:60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #0096d5;
+    font-size: 30px;
+    text-transform: capitalize
+}
+.cont .logo-name{
+    font-family: 'Charm', cursive;
+    font-weight: bolder;
+}
+#slider-area{
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.header{
+    width: 100vw
+}
+.said-about-us{
+    background-color: #eee;
+}
+.info{
+    background-color: #ddd;
+    padding: 1%
+}
+.person1 , .person2 , .person3 , .person4 , .person5 , .person6 , .person7 , .person8 , .person9{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.counter{
+    background-color: #ddd
+}
+.our-team{
+    background-color: #eee
+}
+.team-info{
+    text-align: center;
+}
