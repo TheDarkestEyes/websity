@@ -1,10 +1,53 @@
+"use strict"
+//add scroll button
+$("#btnUpDown").click(function(){
+    $("body , html").animate({scrollTop:'0'},(1000))
+})
 
-/*add the owl carousel*/
+$(window).scroll(function(){
+    
+    var scrlTop = $(window).scrollTop();
+        
+    if(scrlTop >500)
+            {
+                $("#btnUpDown").fadeIn(200)
+            }
+    else
+        {
+            $("#btnUpDown").fadeOut(200)
+        }
+})
+//add laoding screen
+$("body , html").css("overflow","hidden");
+$(document).ready(function(){
+    $("#loading-screen div").fadeOut(1000,function(){
+        $(this).parent().fadeOut(500,function(){
+            $("body , html").css("overflow-y","auto")
+        })  
+    })
+    
+})
+//sticky nav bar
+$(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    if (scroll > 300) {
+          $(".bg-change").css("background" , "#09c");
+      }
+    else{
+          $(".bg-change").css("background" , "transparent");
+      }
+  })
+//add the owl carousel
+//add animation to logo
+$(document).ready(function() {
+    $(".navbar-brand").addClass("animate"); 
+    });
 $('.owl-carousel').owlCarousel({
     loop:true,
     autoplay:true,
     animateIn:'fadeIn',
     autoplayTimeout:3000,
+    touchDrag:true,
     responsive:{
         0:{
             items:1
@@ -18,7 +61,7 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
-/*add the slick slider*/				
+//add the slick slider			
  $('.center').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -46,7 +89,7 @@ $('.owl-carousel').owlCarousel({
      ]
 });
 
-/*add counter*/
+//add counter
 $('.count').each(function () {
     $(this).prop('Counter',0).animate({
         Counter: $(this).text()
@@ -58,3 +101,5 @@ $('.count').each(function () {
         }
     });
 });
+//add wow animation
+new WOW().init();
