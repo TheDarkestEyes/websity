@@ -39,9 +39,7 @@ $(window).scroll(function(){
   })
 //add the owl carousel
 //add animation to logo
-$(document).ready(function() {
-    $(".navbar-brand").addClass("animate"); 
-    });
+
 $('.owl-carousel').owlCarousel({
     loop:true,
     autoplay:true,

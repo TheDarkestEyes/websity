@@ -65,10 +65,7 @@ nav{
 }
 .nav-item:hover .nav-link {
     color: #686868 !important;
-    animation-name: swin;
-    animation-duration: 1.5s;
-    animation-timing-function: ease;    
-    animation-fill-mode: forwards
+    
 }
 .navbar-brand:hover{
     color: #686868 !important;
@@ -77,47 +74,7 @@ nav{
 .bg-change{
     background-color: #09c!important
 }
-.animate{
-    animation-name: small-swin;
-    animation-duration: .75s;
-    animation-delay: 1498ms;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards
-}
-@keyframes swin{
-    0%{
-        transform: rotateZ(15deg);
-        transform-origin: left;
-    }
-    25%{
-        transform: rotateZ(110deg);
-        transform-origin: left
-    }
-    50%{
-        transform: rotateZ(70deg);
-        transform-origin: left
-    }
-    100%{
-        transform: rotateZ(90deg);
-        transform-origin: left
-    }
-}
-@keyframes small-swin{
-    from{
-        transform: rotateZ(0deg);
-        transform-origin: left
-    }
-    25%{
-        transform: rotatez(25deg)
-    }
-    50%{
-        transform: rotateZ(5deg)
-    }
-    to{
-        transform: rotateZ(10deg);
-        transform-origin: left
-    }
-}
+
 .content .par div{
     margin: 5%;
     border: 1px solid #ffc107;

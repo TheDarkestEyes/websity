@@ -65,56 +65,11 @@ nav{
 }
 .nav-item:hover .nav-link {
     color: #686868 !important;
-    animation-name: swin;
-    animation-duration: 1.5s;
-    animation-timing-function: ease;    
-    animation-fill-mode: forwards
-}
+    }
 .navbar-brand:hover{
     color: #686868 !important;
-    
 }
-.animate{
-    animation-name: small-swin;
-    animation-duration: .75s;
-    animation-delay: 1498ms;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards
-}
-@keyframes swin{
-    0%{
-        transform: rotateZ(15deg);
-        transform-origin: left;
-    }
-    25%{
-        transform: rotateZ(110deg);
-        transform-origin: left
-    }
-    50%{
-        transform: rotateZ(70deg);
-        transform-origin: left
-    }
-    100%{
-        transform: rotateZ(90deg);
-        transform-origin: left
-    }
-}
-@keyframes small-swin{
-    from{
-        transform: rotateZ(0deg);
-        transform-origin: left
-    }
-    25%{
-        transform: rotatez(25deg)
-    }
-    50%{
-        transform: rotateZ(5deg)
-    }
-    to{
-        transform: rotateZ(10deg);
-        transform-origin: left
-    }
-}
+
 .one{
      background-image: url(../images/black-friday-buy-computer-34577.jpg);
     background-size: cover;
@@ -161,12 +116,17 @@ nav{
 .header{
     width: 100vw
 }
+
+.said-about-us .center
+{
+    padding-bottom: 20px;
+}
 .said-about-us{
     background-color: #eee;
 }
 .info{
     background-color: rgba(255,255,255,.5);
-    padding: 1%;
+    padding: .1%;
     margin-bottom: 5%
 }
 .person1 , .person2 , .person3 , .person4 , .person5 , .person6 , .person7 , .person8 , .person9{
@@ -181,7 +141,10 @@ nav{
     background-color: rgba(0,0,0,.5);
     color: #fff;
     font-weight: 500;
-    padding: 2%
+    padding: 2%;
+    display: inline-block;
+    margin-top: 10px;
+    
 }
 .counter{
     background-color: rgba(255,255,255,.7);

@@ -1,0 +1,38 @@
+body{
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/bg5.jpg);
+	background-size: cover; 
+	position: relative;
+	text-align: center;
+}
+.login
+{display: none}
+.facebook{
+	background-color: #3b5998;
+}
+.googleplus{
+	background-color: #d34836;
+}
+.signin-btns{
+	background-color:;
+	border-left: solid 1px #000	;
+}
+form{
+	text-align: left;
+}
+.container{
+	background-color: grey;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding: 100px;
+	background-color: #e9ff00;
+}
+p{
+	padding-top: 20px;
+	width: 50%;
+	margin: auto;
+}
+.loginbtn{
+	background-color: #0096dc;
+}
