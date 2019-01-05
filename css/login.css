@@ -1,11 +1,29 @@
 body{
-	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/bg5.jpg);
 	background-size: cover; 
 	position: relative;
 	text-align: center;
 }
+
+.navbar-brand {
+    font-family: 'Charm', cursive;
+    color: #ffc107 !important;
+    font-size: 40px;
+    z-index: 999;
+    transition:all .5s ease
+}
+
+.navbar-brand:hover{
+    color: #686868 !important;
+}
+
 .login
-{display: none}
+{display: block}
+
+.sign-up
+{
+    display: none;
+}
+
 .facebook{
 	background-color: #3b5998;
 }
@@ -15,18 +33,48 @@ body{
 .signin-btns{
 	background-color:;
 	border-left: solid 1px #000	;
+    padding-top: 6%;
+    padding-left: 5%;
 }
+
+.signup .signin-btns
+{
+    padding-top: 16%
+}
+
+@media (max-width:768px)
+{
+    .signup
+    {
+        margin-top: 100px !important;
+    }
+    .sign-up div
+    {
+        width: 100% !important;
+    }
+    
+    .login form
+    {
+        width: 100% !important;
+    }
+    .signin-btns
+    {
+        border: none;
+    }
+
+}
+
+
+    
 form{
 	text-align: left;
 }
 .container{
-	background-color: grey;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	padding: 100px;
-	background-color: #e9ff00;
 }
 p{
 	padding-top: 20px;
