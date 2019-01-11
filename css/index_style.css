@@ -25,6 +25,7 @@ h1{
     color: #FF1177;
     text-transform: capitalize
 }
+
 #btnUpDown{
     position: fixed;
     bottom: 20px;
@@ -129,6 +130,13 @@ nav{
 .cont p{
     font-family: 'Staatliches', cursive;
     font-size: 40px;
+}
+
+#navbarSupportedContent .signin:hover a
+{
+    color: #FF1177;
+    text-decoration: none;
+    border-color: #FF1177
 }
 .one{
      background-image: url(../images/black-friday-buy-computer-34577.jpg);
@@ -267,6 +275,18 @@ h1::before{
     font-weight: 500;
     margin-top: 5%;
     padding: 5% 0
+}
+
+.message button
+{
+    background-color: #686868;
+    border-color: #fff;
+}
+
+.message button:hover
+{
+    text-decoration: none;
+    border-color: #FF1177
 }
 .footer{
     background: rgb(162,43,95);
