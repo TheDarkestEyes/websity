@@ -31,7 +31,7 @@ $(document).ready(function(){
 $(window).scroll(function(){
     var scroll = $(window).scrollTop();
     if (scroll > 300) {
-          $(".bg-change").css("background" , "#09c");
+          $(".bg-change").css("background" , "#262527");
       }
     else{
           $(".bg-change").css("background" , "transparent");
@@ -60,32 +60,31 @@ $('.owl-carousel').owlCarousel({
 })
 
 //add the slick slider			
- $('.center').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 3000,
-     responsive: [
-         {
-      breakpoint: 768,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 2
+$('.center').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 4,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
       }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: true,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-     ]
-});
+    ]
+  });
 
 //add counter
 $('.count').each(function () {
